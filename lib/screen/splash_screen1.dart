@@ -16,6 +16,13 @@ class Screen1 extends StatelessWidget {
           Container(
             height: 200,
             width: 200,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: const Color.fromARGB(255, 104, 116, 104),
+              image: DecorationImage(image: AssetImage("assets/images/welcome.png"),
+              fit: BoxFit.cover,
+              )
+            ),
           ),
           SizedBox(height: 20),
           Text("Welcome",style: TextStyle(
@@ -30,6 +37,8 @@ class Screen1 extends StatelessWidget {
           )),
 
           SizedBox(height: 5),
+
+
 
          ], 
         ),
