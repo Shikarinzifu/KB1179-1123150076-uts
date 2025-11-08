@@ -70,6 +70,28 @@ class Screen1 extends StatelessWidget {
                         ],
                       ),
 
+                      SizedBox(height: 40),
+                           Container(
+                            margin: EdgeInsets.all(40),
+                            child: SizedBox(
+                              height: 40,
+                              width: double.infinity,
+                            child: ElevatedButton(
+                            onPressed: () {
+                             
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.green,
+                            ),
+                             child: Text("Continue",style: TextStyle(
+                              color: Colors.white,
+                             )
+                             )
+                          ),
+                          )
+                          )
+
+
 
 
          ], 
