@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splash_screen/screen/splash_screen3.dart';
 
 
 class Screen2 extends StatelessWidget {
@@ -78,7 +79,11 @@ class Screen2 extends StatelessWidget {
                               width: double.infinity,
                             child: ElevatedButton(
                             onPressed: () {
-                             
+                             Navigator.pushAndRemoveUntil(
+                                context,
+                              MaterialPageRoute(builder: (context) => Screen3()),
+                              (Route<dynamic> route) => false,
+                              );
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.green,
