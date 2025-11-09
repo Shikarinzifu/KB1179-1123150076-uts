@@ -56,7 +56,7 @@ class Screen2 extends StatelessWidget {
                             width: 10,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Colors.green,
+                              color: Colors.cyanAccent,
                             ),
                           ),
                           SizedBox(width: 5),
@@ -86,7 +86,7 @@ class Screen2 extends StatelessWidget {
                               );
                             },
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.green,
+                              backgroundColor: Colors.cyanAccent,
                             ),
                              child: Text("Continue",style: TextStyle(
                               color: Colors.white,
@@ -94,8 +94,15 @@ class Screen2 extends StatelessWidget {
                              )
                           ),
                           )
-                          )
-
+                          ),
+SizedBox(height: 20),
+            Text(
+              "NIM : 1123150076",
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.grey,
+              ),
+            ),
 
 
 

@@ -14,7 +14,7 @@ class Login extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: 10),
-                const Icon(Icons.lock_outline, size: 80, color: Colors.green),
+                const Icon(Icons.lock_outline, size: 80, color: Colors.cyanAccent),
                 const SizedBox(height: 20),
                 const Text(
                   "Selamat Datang!",
@@ -27,7 +27,7 @@ class Login extends StatelessWidget {
                 const Text(
                   "Silahkan Login untuk melanjutkan.",
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 12, color: Colors.green),
+                  style: TextStyle(fontSize: 12, color: Colors.cyanAccent),
                 ),
                 const SizedBox(height: 20),
                 TextField(
@@ -42,7 +42,7 @@ class Login extends StatelessWidget {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(25)),
-                      borderSide: BorderSide(color: Colors.green, width: 2),
+                      borderSide: BorderSide(color: Colors.cyanAccent, width: 2),
                     ),
                   ),
                 ),
@@ -61,7 +61,7 @@ class Login extends StatelessWidget {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(25)),
-                      borderSide: BorderSide(color: Colors.green, width: 2),
+                      borderSide: BorderSide(color: Colors.cyanAccent, width: 2),
                     ),
                   ),
                 ),
@@ -86,7 +86,7 @@ class Login extends StatelessWidget {
                       onPressed: () {
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green,
+                        backgroundColor: Colors.cyanAccent,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(25),
                         ),
@@ -171,16 +171,25 @@ class Login extends StatelessWidget {
                       child: const Text(
                         "Daftar di sini",
                         style: TextStyle(
-                          color: Colors.green,
+                          color: Colors.cyanAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                    )
+                    ),
+                    SizedBox(height: 20),
+            Text(
+              "NIM : 1123150076",
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.grey,
+              ),
+            ),
                   ],
                 ),
               ],
             ),
           ),
+          
         ),
       ),
     );
